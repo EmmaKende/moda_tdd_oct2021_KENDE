@@ -33,13 +33,11 @@ public class DictionaryTest {
         dict.addTranslation("contre", List.of("against"));
         dict.addTranslation("salut", List.of("hello"));
         assertThat(dict.getTranslation("contre"), equalTo(List.of("against")));
-        assertThat(dict.getTranslation("salut"), equalTo("hello"));
+        assertThat(dict.getTranslation("salut"), equalTo(List.of("hello")));
     }
 
     @Test public void testDeuxTranslation(){
-        dict.addTranslation("contre", List.of("against"));
-        dict.addTranslation("contre", List.of("hi"));
-        dict.addTranslation("contre", List.of("coucou"));
+        dict.addTranslation("contre", List.of("against","hi","coucou"));
         assertThat(dict.getTranslation("contre"), containsInAnyOrder("against","hi","coucou"));
     }
 

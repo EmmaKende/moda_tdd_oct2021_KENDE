@@ -20,7 +20,7 @@ public class Dictionary {
         return this.translations.get(t);
     }
     public void addTranslation(String a, List<String> b){
-        this.translations.put(a,b);
+            this.translations.put(a,b);
     }
     public boolean isEmpty(){
         if(translations == null) return true;
