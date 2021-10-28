@@ -3,3 +3,5 @@
     - oui avec une seule de ces méthodes on peut un test ( getTranslation)
 3) Traduction multiples 
    - créer dans la MAP une list au niveau des values
+   
+4) url : https://github.com/EmmaKende/moda_tdd_oct2021_KENDE.git

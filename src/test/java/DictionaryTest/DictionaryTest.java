@@ -1,5 +1,6 @@
 package DictionaryTest;
 import Dictionary.Dictionary;
+import org.checkerframework.framework.qual.EnsuresQualifier;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -39,6 +40,11 @@ public class DictionaryTest {
     @Test public void testDeuxTranslation(){
         dict.addTranslation("contre", List.of("against","hi","coucou"));
         assertThat(dict.getTranslation("contre"), containsInAnyOrder("against","hi","coucou"));
+    }
+
+    @Test public void testInverse(){
+        dict.addTranslation("contre", List.of("against"));
+        assertThat(dict.translationInverse("against"), equalTo("hello"));
     }
 
 

@@ -22,6 +22,9 @@ public class Dictionary {
     public void addTranslation(String a, List<String> b){
             this.translations.put(a,b);
     }
+    public List<String> translationInverse(String t){
+        return this.translations.get("contre");
+    }
     public boolean isEmpty(){
         if(translations == null) return true;
         return false;
