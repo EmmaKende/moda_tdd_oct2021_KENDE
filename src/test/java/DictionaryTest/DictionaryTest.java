@@ -37,8 +37,4 @@ public class DictionaryTest {
         assertThat(dict.getTranslation("salut"), equalTo("hello"));
     }
 
-
-
-
-
 }
