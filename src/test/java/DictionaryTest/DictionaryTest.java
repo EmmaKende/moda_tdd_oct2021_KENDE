@@ -12,11 +12,12 @@ public class DictionaryTest {
 
     @Before
     public  void setUpClass(){
-        dict = new Dictionary();
+        dict = new Dictionary("Example");
     }
     @Test
     public void testDictionaryName() {
         assertThat(dict.getName(), equalTo("Example"));
     }
+
 
 }

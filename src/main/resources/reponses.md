@@ -1,1 +1,1 @@
- 
+1) duplication existante : oui au niveau du getName: on 2 fois Example  
