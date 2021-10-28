@@ -2,4 +2,4 @@
 2) Triangulation
     - oui avec une seule de ces méthodes on peut un test ( getTranslation)
 3) Traduction multiples 
-   1- créer dans la MAP une list au niveau des values
+   - créer dans la MAP une list au niveau des values

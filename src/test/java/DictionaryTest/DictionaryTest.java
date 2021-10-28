@@ -5,7 +5,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DictionaryTest {
@@ -14,10 +17,6 @@ public class DictionaryTest {
     @Before
     public  void initialisation(){
         dict = new Dictionary("Example");
-    }
-    @After
-    public void fin(){
-        dict = new Dictionary(null);
     }
 
     @Test
@@ -31,10 +30,18 @@ public class DictionaryTest {
     }
 
     @Test public void testOneTranslation() {
-        dict.addTranslation("contre", "against");
-        dict.addTranslation("salut", "hello");
-        assertThat(dict.getTranslation("contre"), equalTo("against"));
+        dict.addTranslation("contre", List.of("against"));
+        dict.addTranslation("salut", List.of("hello"));
+        assertThat(dict.getTranslation("contre"), equalTo(List.of("against")));
         assertThat(dict.getTranslation("salut"), equalTo("hello"));
     }
+
+    @Test public void testDeuxTranslation(){
+        dict.addTranslation("contre", List.of("against"));
+        dict.addTranslation("contre", List.of("hi"));
+        dict.addTranslation("contre", List.of("coucou"));
+        assertThat(dict.getTranslation("contre"), containsInAnyOrder("against","hi","coucou"));
+    }
+
 
 }
