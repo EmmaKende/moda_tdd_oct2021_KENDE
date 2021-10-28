@@ -22,6 +22,7 @@ public class Dictionary {
         this.translations.put(a,b);
     }
     public boolean isEmpty(){
-        return true;
+        if(translations == null) return true;
+        return false;
     }
 }

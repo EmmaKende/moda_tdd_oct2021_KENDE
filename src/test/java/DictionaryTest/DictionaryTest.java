@@ -22,8 +22,9 @@ public class DictionaryTest {
 
     @Test
     public void testDictionaryIsEmpty(){
-        Assert.assertTrue(dict.isEmpty());
+        Assert.assertFalse(dict.isEmpty());
     }
+
     @Test public void testOneTranslation() {
         dict.addTranslation("contre", "against");
         dict.addTranslation("salut", "hello");

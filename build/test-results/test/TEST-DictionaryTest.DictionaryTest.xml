@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DictionaryTest.DictionaryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-28T12:15:50" hostname="MacBook-Pro-de-emma.local" time="0.01">
+<testsuite name="DictionaryTest.DictionaryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-28T12:21:43" hostname="MacBook-Pro-de-emma.local" time="0.011">
   <properties/>
-  <testcase name="testOneTranslation" classname="DictionaryTest.DictionaryTest" time="0.009"/>
-  <testcase name="testDictionaryName" classname="DictionaryTest.DictionaryTest" time="0.0"/>
-  <testcase name="testDictionaryIsEmpty" classname="DictionaryTest.DictionaryTest" time="0.001"/>
+  <testcase name="testOneTranslation" classname="DictionaryTest.DictionaryTest" time="0.01"/>
+  <testcase name="testDictionaryName" classname="DictionaryTest.DictionaryTest" time="0.001"/>
+  <testcase name="testDictionaryIsEmpty" classname="DictionaryTest.DictionaryTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
