@@ -10,6 +10,12 @@ public class Dictionary {
     public String getName(){
         return this.name;
     }
+    public String getTranslation(String t){
+        return "hello";
+    }
+    public void addTranslation(String a, String b){
+
+    }
     public boolean isEmpty(){
         return true;
     }

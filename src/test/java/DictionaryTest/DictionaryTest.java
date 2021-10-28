@@ -22,7 +22,11 @@ public class DictionaryTest {
 
     @Test
     public void testDictionaryIsEmpty(){
-        assertThat(dict.isEmpty(),equalTo(false));
+        Assert.assertTrue(dict.isEmpty());
+    }
+    @Test public void testOneTranslation() {
+        dict.addTranslation("contre", "against");
+        assertThat(dict.getTranslation("contre"), equalTo("against"));
     }
 
 }

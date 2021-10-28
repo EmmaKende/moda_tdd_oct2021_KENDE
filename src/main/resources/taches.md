@@ -4,4 +4,4 @@ tache 3: faire le testDictionaryname qui echoue ok
 tache 4: faire le testDictionaryname qui passe ok
 tache 5: rajouter l'attribut privé et le getName
 tache 6: faire le test isEmpty
-tache 7: 
+tache 7: traitement du dictionnaire vide
