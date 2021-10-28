@@ -1,7 +1,10 @@
 package Dictionary;
 
+import java.util.Map;
+
 public class Dictionary {
    private String name;
+   private Map<String, String> translations;
 
     public Dictionary(String name) {
         this.name = name;
