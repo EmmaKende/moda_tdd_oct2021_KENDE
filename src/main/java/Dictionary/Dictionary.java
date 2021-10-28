@@ -10,4 +10,7 @@ public class Dictionary {
     public String getName(){
         return this.name;
     }
+    public boolean isEmpty(){
+        return true;
+    }
 }

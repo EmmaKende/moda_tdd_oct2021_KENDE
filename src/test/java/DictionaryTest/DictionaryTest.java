@@ -1,5 +1,6 @@
 package DictionaryTest;
 import Dictionary.Dictionary;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -19,5 +20,9 @@ public class DictionaryTest {
         assertThat(dict.getName(), equalTo("Example"));
     }
 
+    @Test
+    public void testDictionaryIsEmpty(){
+        assertThat(dict.isEmpty(),equalTo(false));
+    }
 
 }
