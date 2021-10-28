@@ -3,6 +3,7 @@ package Dictionary;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class Dictionary {
    private String name;
@@ -22,8 +23,13 @@ public class Dictionary {
     public void addTranslation(String a, List<String> b){
             this.translations.put(a,b);
     }
-    public List<String> translationInverse(String t){
-        return this.translations.get("contre");
+    public String translationInverse(List<String> b){
+        for(Map.Entry e : this.translations.entrySet()){
+            if(Objects.equals(b,e.getValue())){
+                return e.getKey().toString();
+            }
+        }
+        return "";
     }
     public boolean isEmpty(){
         if(translations == null) return true;

@@ -44,7 +44,8 @@ public class DictionaryTest {
 
     @Test public void testInverse(){
         dict.addTranslation("contre", List.of("against"));
-        assertThat(dict.translationInverse("against"), equalTo("hello"));
+
+        assertThat(dict.translationInverse(List.of("against")), equalTo("contre"));
     }
 
 
