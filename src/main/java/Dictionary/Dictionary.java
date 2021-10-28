@@ -1,13 +1,13 @@
 package Dictionary;
 
 public class Dictionary {
-   private String name;
+   //private String name;
 
-    public Dictionary(String name) {
-        this.name = name;
+    public Dictionary() {
+        //this.name = name;
     }
 
     public String getName(){
-        return null;
+        return "tache";
     }
 }
