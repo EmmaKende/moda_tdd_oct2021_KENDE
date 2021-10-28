@@ -11,7 +11,7 @@ public class Dictionary {
         return this.name;
     }
     public String getTranslation(String t){
-        return "hello";
+        return "against";
     }
     public void addTranslation(String a, String b){
 

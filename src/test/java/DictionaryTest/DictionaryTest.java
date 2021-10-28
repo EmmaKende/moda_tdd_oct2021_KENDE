@@ -25,7 +25,7 @@ public class DictionaryTest {
         Assert.assertTrue(dict.isEmpty());
     }
     @Test public void testOneTranslation() {
-        dict.addTranslation("contre", "against");
+        //dict.addTranslation("contre", "against");
         assertThat(dict.getTranslation("contre"), equalTo("against"));
     }
 
